@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat&family=Orbitron:wght@400;800&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lora:wght@700&family=Montserrat&family=Orbitron:wght@400;800&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="mobile-header">
+        <img id="mobile-menu" src="images/burgerIcon.png">
+        <img id="mobile-logo" src="images/logo.svg">
+        <img id="mobile-basket" src="images/basketIcon.png">
+    </div>
+    <div class="mobile-search">
+        <label for="mobile-srch">Search 🔎</label>
+        <input type="text"id="mobile-srch">
+    </div>
+    <div class="header">
+        <div class="menu">
+            <div class="search">
+                <label for="search">Search 🔎</label>
+                <input type="text" id="search">
+            </div>
+            <ul>
+                <li><a href="#">Log on</a></li>
+                <li><a href="#">Join us</a></li>
+                <li><a href="#">Price and Memberships</a></li>
+                <li><a href="#">Reminders</a></li>
+            </ul>
+        </div>
+        <img id="logo" src="images/logo.svg"/>
+
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <a href="#">OCCASIONS</a>
+                    <div class="dropdown-menu">
+                        <div class="col-one">
+                            <ul class="col-one-nav">
+                                <li><a href="#">Happy Birthday</a></li>
+                                <li><a href="#">Thank You</a></li>
+                                <li><a href="#">Thinking Of You</a></li>
+                                <li><a href="#">Wedding / Anniversary</a></li>
+                                <li><a href="#">Just Saying Hi</a></li>
+                                <li><a href="#">Get Well Soon</a></li>
+                                <li><a href="#">Congratulations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-two">
+                            <ul class="col-two-nav">
+                                <li><a href="#">With Sympathy</a></li>
+                                <li><a href="#">New Baby</a></li>
+                                <li><a href="#">Bon Voyage</a></li>
+                                <li><a href="#">New Home</a></li>
+                                <li><a href="#">Good Luck / Retirement</a></li>
+                                <li><a href="#">Us Patriotic</a></li>
+                                <li><a class='view-all-cards' href="#">View all cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-three">
+                            <img src="images/image.jpg">                       
+                            <h2>Marketing Module Headline Goes Here!</h2>
+                        </div>
+                    </div>
+                </li>
+            <li><a href="#">HOLYDAYS</a></li>
+            <li><a href="#">THEMES</a></li>
+            <li><a href="#">GIFT SHOP</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BEHIND THE SCENES</a></li>
+            <li><a href="#">GIFT BASKET</a></li>
+            </ul>
+        </nav>
+  
+    </div>    
+    <div class="free-membership">
+        <h1 class="title">Start your FREE membership</h1>
+        <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500's,
+        when an unknown printer took a galley</p>
+    </div>
+    <div class="sub-menu-buttons-container">
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >REEDEM</button>
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >REGISTER</button>
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >CONFIRMATION</button>
+    </div>
+    <div class="mobile-sub-menu-buttons-container">
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >STEP 1</button>
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >STEP 2</button>
+        <button class="sub-menu-btn" onmouseover="changeColor(this)" onmouseout="resetColor(this)" >STEP 3</button>
+    </div>
+    <div class="voucher-section">
+        <div class="gift-img-section">
+            <img id="gift-img" src="images/image2.jpg"/>
+            <p class="paragraph">Use the voucher from the e-mail you received to obtain free membership of jacquielawson.com -- the classiest e-cards site on the web! </p>
+        </div>
+        <div class="form-fields-section">
+            <h1 class="title">Enter Your Code</h1>
+            <p class="paragraph">Fields marked with an asterisk (*) are required.</p>
+            <form class="the-form">
+                <div class="form-group">
+                    <label for="code-input" class="font-style2 labels-style">* REDEMPTION CODE:</label>
+                    <input class="fields-style" id="code-input" type="text">
+                    <p id="code-error" class="error-message"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email-input" class="font-style2 labels-style">* E-MAIL ADRESS:</label>
+                    <input class="fields-style" id="email-input" type="email">
+                    <p id="email-error" class="error-message"></p>
+                </div>
+                <div class="form-group">
+                    <label for="country-select" class="font-style2 labels-style">* COUNTRY:</label>
+                    <select id="country-select" class="fields-style"></select>    
+                </div>
+                <button type="button"  id="submit-btn" onclick="validateForm()">Continue</button>
+            </form>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="about-section-text">
+            <h1 class="title">The Classiest Ecards On The Web</h1>
+            <p class="paragraph">Jacquie Lawson is an English artist who lives in the picturesque village of Lurgashall in Southern England.
+                Together with a small team of family and friends she has developed a unique collection of animated ecards, which show a degree of artistry
+                and attention to detail rarely seen in the medium of ecards. Even the music is composed and arranged specially for each card!
+                <br><br>
+                If you are visiting this page you probably received an email with a voucher giving you free membership to jacquielawson.com. Membership will
+                allow you to send as many of our ecards as you like! All you have to do is enter your voucher details above, and within minutes you can be sending
+                our delightful ecards to your friends and family.
+            </p>              
+        </div>
+        <img id="about-img" src="images/image4.png">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
